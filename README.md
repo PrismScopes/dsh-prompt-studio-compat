@@ -1,5 +1,13 @@
 # dsh-prompt-studio
 
+> **本仓库说明**：这是 [`Moeblack/dsh-prompt-studio`](https://github.com/Moeblack/dsh-prompt-studio) 的 **DSH 0.2.x 兼容分支**（v0.5.0），修复插件在 DSH `0.2.0-rc.2` 上无法加载与使用的问题；完整提交历史、原作者署名与 BSD-3-Clause 许可均保留。上游移植 PR 见 [Moeblack/dsh-prompt-studio#8](https://github.com/Moeblack/dsh-prompt-studio/pull/8)，上游合并后请以上游仓库为准。
+
+**安装（本仓库）**
+
+```sh
+dsh plugin --profile web add github:PrismScopes/dsh-prompt-studio-compat
+```
+
 Prompt Studio 的 DeepSeek Harness 插件分发形态。插件在对话页注册 **Prompt Studio** 标签页，以同一组件列表展示运行时原生提示词和用户补充，并提供编辑、原生覆盖与完整请求预览。
 
 > **适配目标**：DeepSeek Harness `0.2.0-rc.2`（含 `0.2.x` 系列）。0.1.x 平台已被上游移除的包（`@deepseek-ai/dsh-client-web-react`、`@deepseek-ai/dsh-client-runtime`、`SettingsProvider`）不再被引用。
